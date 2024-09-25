@@ -1,0 +1,274 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #5D675B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+h1 {
+    color: #F1BB87;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    font-size: 4vh; /* Responsive heading */
+}
+
+.wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.game {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+    grid-gap: 1rem;
+    width: 60vw; /* Adjust width based on viewport */
+    max-width: 600px; /* Ensure it doesn’t get too large */
+    padding-bottom: 25px;
+}
+
+.turnof {
+    display: block;
+    padding-bottom: 15px;
+    font-size: 2.5vh;
+}
+
+.box {
+    color: brown;
+    font-size: 6vw; /* Responsive font size */
+    background-color: #F7EF99;
+    aspect-ratio: 1 / 1; /* Ensures each box is a perfect square */
+    width: 100%; /* Box takes full width of the grid column */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, 
+                rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, 
+                rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    border-radius: 15px;
+    border: none;
+    text-align: center;
+}
+
+.box:active {
+    transform: scale(0.95);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;   
+    height: 100vh;
+    width: 70vh;     
+}
+
+.Reset, .newgame {
+    margin: 10px 20px;
+    background-color: #ABE188;
+    padding: 10px 20px;
+    border-radius: 1rem;
+    border: none;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    font-size: 2vh; /* Responsive button font size */
+}
+
+.Reset:active, .newgame:active {
+    transform: scale(0.95);
+}
+
+/* Media Query for smaller screens (tablets and phones) */
+@media screen and (max-width: 768px) {
+    .game {
+        width: 80vw;
+        max-width: 80vw;
+        grid-gap: 0.8rem;
+    }
+
+    .box {
+        font-size: 8vw; /* Adjust font size */
+    }
+
+    h1 {
+        font-size: 5vh;
+    }
+
+    .Reset, .newgame {
+        font-size: 2.5vh;
+    }
+
+    .turnof {
+        font-size: 3vh;
+    }
+}
+
+/* Media Query for very small screens (mobile) */
+@media screen and (max-width: 480px) {
+    .game {
+        width: 90vw;
+        max-width: 90vw;
+    }
+
+    .box {
+        font-size: 10vw; /* Further adjust font size */
+    }
+
+    .Reset, .newgame {
+        padding: 8px 16px;
+        font-size: 2.5vh;
+    }
+
+    h1 {
+        font-size: 4.5vh;
+    }
+
+    .turnof {
+        font-size: 3.5vh;
+    }
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #5D675B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+h1 {
+    color: #F1BB87;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    font-size: 4vh; /* Responsive heading */
+}
+
+.wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.game {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+    grid-gap: 1rem;
+    width: 60vw; /* Adjust width based on viewport */
+    max-width: 600px; /* Ensure it doesn’t get too large */
+    padding-bottom: 25px;
+}
+
+.turnof {
+    display: block;
+    padding-bottom: 15px;
+    font-size: 2.5vh;
+}
+
+.box {
+    color: brown;
+    font-size: 6vw; /* Responsive font size */
+    background-color: #F7EF99;
+    aspect-ratio: 1 / 1; /* Ensures each box is a perfect square */
+    width: 100%; /* Box takes full width of the grid column */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, 
+                rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, 
+                rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    border-radius: 15px;
+    border: none;
+    text-align: center;
+}
+
+.box:active {
+    transform: scale(0.95);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;   
+    height: 100vh;
+    width: 70vh;     
+}
+
+.Reset, .newgame {
+    margin: 10px 20px;
+    background-color: #ABE188;
+    padding: 10px 20px;
+    border-radius: 1rem;
+    border: none;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    font-size: 2vh; /* Responsive button font size */
+}
+
+.Reset:active, .newgame:active {
+    transform: scale(0.95);
+}
+
+/* Media Query for smaller screens (tablets and phones) */
+@media screen and (max-width: 768px) {
+    .game {
+        width: 80vw;
+        max-width: 80vw;
+        grid-gap: 0.8rem;
+    }
+
+    .box {
+        font-size: 8vw; /* Adjust font size */
+    }
+
+    h1 {
+        font-size: 5vh;
+    }
+
+    .Reset, .newgame {
+        font-size: 2.5vh;
+    }
+
+    .turnof {
+        font-size: 3vh;
+    }
+}
+
+/* Media Query for very small screens (mobile) */
+@media screen and (max-width: 480px) {
+    .game {
+        width: 90vw;
+        max-width: 90vw;
+    }
+
+    .box {
+        font-size: 10vw; /* Further adjust font size */
+    }
+
+    .Reset, .newgame {
+        padding: 8px 16px;
+        font-size: 2.5vh;
+    }
+
+    h1 {
+        font-size: 4.5vh;
+    }
+
+    .turnof {
+        font-size: 3.5vh;
+    }
+}
